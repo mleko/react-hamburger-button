@@ -1,6 +1,19 @@
 {
   "name": "react-hamburger-button",
   "version": "0.0.0",
+  "description": "Simple hamburget button",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "menu",
+    "hamburger",
+    "ui-component",
+    "navigation",
+    "button"
+  ],
+  "author": "Daniel Król",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "webpack-dev-server --config examples/webpack.config.js --open",
     "compile": "tsc -d",
@@ -8,7 +21,6 @@
     "prepublishOnly": "npm run compile",
     "lint": "tslint 'src/**' 'examples/src/**'"
   },
-  "license": "MIT",
   "devDependencies": {
     "@types/react": "^15.0.0",
     "@types/react-dom": "^0.14.14",
@@ -25,5 +37,9 @@
   },
   "peerDependencies": {
     "react": "^15.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mleko/react-hamburger-button.git"
   }
 }

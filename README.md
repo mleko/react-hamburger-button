@@ -1,5 +1,4 @@
 # react-hamburger-button
-=========================
 
 ## Installation
 
