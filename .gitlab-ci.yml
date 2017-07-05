@@ -27,3 +27,12 @@ pages:
       - public
   only:
     - master
+
+publish:
+  stage: deploy
+  only:
+    - master
+  script:
+    - npm run -q compile
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
+    - npm publish
