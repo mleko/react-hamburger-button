@@ -1,0 +1,29 @@
+image: node
+
+before_script:
+  - npm -q install
+
+compile:
+  stage: build
+  script:
+    - npm run -q compile
+    - npm run -q compile:examples
+
+check:
+  stage: test
+  script:
+    - npm run -q lint
+
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - npm run -q compile:examples
+    - cp examples/dist/bundle.js public/
+    - cp examples/public_html/index.html public/
+    - "echo -e \"DATE: $(date '+%Y-%m-%d %H:%M:%S')\\nREF: $(git rev-parse --verify HEAD)\" > public/dist.info.txt"
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
