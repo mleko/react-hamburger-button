@@ -67,3 +67,7 @@ animationDuration | number | 0.4       | the length of time it takes for the ico
 ## License
 
 MIT Licensed Copyright (c) Cameron Bourke 2015, Daniel Król 2017
+
+## Credits
+
+Component based on https://github.com/cameronbourke/react-hamburger-menu
