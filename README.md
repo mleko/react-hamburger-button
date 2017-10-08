@@ -23,6 +23,11 @@ npm start
 
 React Hamburger Button has only two required props: `open` and `onClick`.
 
+#### include
+```js
+import { HamburgerButton } from 'react-hamburger-button';
+```
+
 #### onClick
 
 Note: This prop is passed a `function`. This function will be invoked when the component is `clicked`. The function should responsible for updating the state that is passed to `open`. The function passed to `onClick` could look something like the following:
@@ -38,7 +43,7 @@ handleClick() {
 An example use of React Hamburger Menu looks like:
 
 ```js
-<HamburgerMenu
+<HamburgerButton
 	open={this.state.open}
 	onClick={this.handleClick.bind(this)}
 	width={18}
