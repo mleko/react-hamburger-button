@@ -25,7 +25,7 @@ React Hamburger Button has only two required props: `open` and `onClick`.
 
 #### include
 ```js
-import { HamburgerButton } from 'react-hamburger-button/dist/index';
+import { HamburgerButton } from 'react-hamburger-button';
 ```
 
 #### onClick
